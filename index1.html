@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carvilla</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header Section with Navigation -->
+  <header>
+    <nav>
+      <div class="logo">CARVILLA</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#featured">Featured Cars</a></li>
+        <li><a href="#new">New Cars</a></li>
+        <li><a href="#brands">Brands</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero section">
+    <div class="hero-content">
+      <h1>Get Your Desired Car at a Reasonable Price</h1>
+      <p>Explore our wide range of vehicles and find the perfect match for you.</p>
+      <a href="#contact" class="button">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="service" class="section">
+    <h2>Our Services</h2>
+    <p>We offer a wide range of services to meet all your car needs.</p>
+    <ul class="service-list">
+      <li>Car Sales</li>
+      <li>Car Rentals</li>
+      <li>Maintenance and Repairs</li>
+      <li>Financing Options</li>
+    </ul>
+  </section>
+
+  <!-- Featured Cars Section -->
+  <section id="featured" class="section">
+    <h2>Featured Cars</h2>
+    <div class="car-list">
+      <div class="car-item">
+        <img src="car1.jpg" alt="Car 1">
+        <h3>2023 Model X</h3>
+        <p>Price: $70,000</p>
+      </div>
+      <div class="car-item">
+        <img src="car2.jpg" alt="Car 2">
+        <h3>2023 Model Y</h3>
+        <p>Price: $60,000</p>
+      </div>
+      <div class="car-item">
+        <img src="car3.jpg" alt="Car 3">
+        <h3>2023 Model Z</h3>
+        <p>Price: $80,000</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Arrivals Section -->
+  <section id="new" class="section">
+    <h2>New Arrivals</h2>
+    <p>Check out the latest models in our inventory.</p>
+  </section>
+
+  <!-- Popular Brands Section -->
+  <section id="brands" class="section">
+    <h2>Popular Brands</h2>
+    <p>Find cars from the most popular brands in the market.</p>
+    <ul class="brand-list">
+      <li>Toyota</li>
+      <li>Ford</li>
+      <li>BMW</li>
+      <li>Audi</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit" class="button">Send Message</button>
+    </form>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>

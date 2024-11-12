@@ -1,0 +1,201 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Lora', serif; /* Sử dụng font Lora */
+    background-image: url('background.jpg'); /* Thay thế bằng hình nền thực tế */
+    background-size: cover; /* Đảm bảo hình nền phủ kín toàn bộ */
+    background-position: center; /* Căn giữa hình nền */
+    color: #222; /* Màu chữ */
+}
+
+  
+  /* Expanded Navbar (default) */
+  header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển tiếp */
+  }
+  
+  .logo:hover {
+    transform: scale(1.5); /* Phóng to lên 50% khi di chuột */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    transition: gap 0.3s ease;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.2s ease, color 0.2s ease; /* Thêm hiệu ứng chuyển tiếp */
+  }
+  
+  nav ul li a:hover {
+    color: #4a67ff; /* Màu khi di chuột */
+    transform: scale(1.5); /* Phóng to lên 50% khi di chuột */
+  }
+  
+  /* Compact Navbar (applied on scroll) */
+  header.compact {
+    padding: 10px 0;
+    background-color: #333; /* Dark background when scrolled */
+  }
+  
+  header.compact .logo {
+    font-size: 20px;
+  }
+  
+  header.compact nav ul {
+    gap: 10px;
+  }
+  
+  header.compact nav ul li a {
+    font-size: 14px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-image: url("car-background.jpg"); /* Thay thế bằng hình nền thực tế */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 80px;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4a67ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.2s ease, background-color 0.2s ease; /* Thêm hiệu ứng chuyển tiếp */
+  }
+  
+  .button:hover {
+    background-color: #354bc8;
+    transform: scale(1.1); /* Phóng to lên 10% khi di chuột */
+  }
+  
+  /* Section Styles */
+  .section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .section p {
+    font-size: 16px;
+    color: #ddd;
+  }
+  
+  /* Service List */
+  .service-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  /* Car List */
+  .car-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .car-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .car-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Brand List */
+  .brand-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  /* Contact Form */
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  #contact-form label {
+    font-weight: bold;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #contact-form button {
+    align-self: flex-start;
+  }
+  
